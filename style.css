@@ -1,0 +1,93 @@
+/* style.css */
+body {
+  font-family: "dnp-shuei-mgothic-std", sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* ★ テーマカラー: 背景を薄い水色に変更 */
+  background-color: #DFFAFF;
+  /* ★ 背景色に合わせてテキストの色を濃いグレーに変更 */
+  color: #374151; /* Tailwindのtext-gray-700 */
+}
+
+model-viewer {
+  width: 100%;
+  height: 70vh;
+  /* ★ モデルの背景は白にして際立たせる */
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* スクロールスナップのコンテナ */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* スナップする各セクション */
+.snap-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* ★ カードの背景を白に変更 */
+.card {
+  background-color: #FFFFFF;
+  color: #374151; /* text-gray-700 */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+/* ★ カード内の見出し(h3)にテーマカラー(青)を適用 */
+.card h3 {
+  color: #1EBAEE;
+}
+/* ★ カードのホバーエフェクト（影を調整）*/
+.card-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ヘッダーロゴの位置を左上に固定 */
+.header-logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  height: 4rem; /* h-16 */
+}
+@media (min-width: 640px) {
+  .header-logo {
+    height: 5rem; /* sm:h-20 */
+  }
+}
+
+/* ★ スクロールを促す下矢印の色をテーマカラー(青)に変更 */
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+  color: #1EBAEE;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}

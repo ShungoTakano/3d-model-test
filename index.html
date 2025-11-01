@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第76回津田沼祭 ステージ装飾紹介</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'gwr8dqh',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+
+<body class="h-full">
+
+  <div class="snap-container">
+
+    <header class="snap-section text-center">
+        <img 
+          src="logo.png" 
+          alt="第76回津田沼祭 由縁 ロゴ"
+          class="header-logo" >
+        
+        <div class="max-w-3xl">
+          <h1 class="text-5xl md:text-7xl font-bold leading-tight" style="color: #F28D00;">
+            第76回津田沼祭<br>ステージ装飾紹介
+          </h1>
+          <p class="text-gray-600 mt-4 text-xl">長い期間をかけて制作した傑作をご覧ください！</p>
+        </div>
+
+        <div class="scroll-down-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </div>
+    </header>
+
+    <section class="snap-section">
+      <div class="w-full max-w-7xl mx-auto flex flex-col items-center">
+        <model-viewer
+          id="viewer"
+          src="./stage.glb"
+          alt="第76回津田沼祭 ステージ装飾"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1.2"
+          exposure="1.0"
+          camera-orbit="auto auto 30%"
+          class="w-full" >
+        </model-viewer>
+        <p class="text-center text-gray-500 mt-6">マウスドラッグで回転・ホイールでズームできます。</p>
+      </div>
+    </section>
+
+    <section id="description" class="snap-section">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8" style="color: #F28D00;">
+          テーマ「由縁」について
+        </h2>
+        <div class="card p-8 md:p-10 rounded-2xl shadow-xl text-left leading-relaxed space-y-5 text-lg">
+          <p>「由縁」とは本来、事の起こりやゆかりを意味します。しかし「由縁」という言葉は、偶然のようで実は必然的に訪れた出会いや出来事を指し、それらは私たちの人生における大切な道しるべでもあります。</p>
+          <p>「由縁」には二つの想いを込めました。一つ目は、普段感じることのできない文化や価値を津田沼祭を通して見出してほしいという願い。二つ目は、関係者すべての方々にとって、これからの行動を起こすきっかけになってほしいという想いです。</p>
+          <p>津田沼祭という場が、皆さまにとっての挑戦の場となり、新たな一歩を踏み出す契機となることを願って、「由縁」というテーマを掲げました。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="creators" class="snap-section !h-auto min-h-screen py-20">
+      <div class="max-w-6xl mx-auto w-full">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12" style="color: #F28D00;">
+          制作者紹介
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="card card-hover rounded-2xl p-6 flex flex-col items-center text-center transition-transform duration-300">
+            <img src="https://placehold.co/128x128/E0E0E0/7F7F7F?text=美術部" class="w-32 h-32 rounded-full mb-5 border-4 border-gray-200 object-cover" alt="美術部">
+            <h3 class="text-2xl font-bold">美術部</h3>
+            <p class="mt-3 text-base">この作品は「由縁」をテーマに、人から人へと受け継がれる想いを手で表現しました。右の手が築いてきたものを、左の手が新たに繋ぎ取ろうとする瞬間を描き、赤い糸で続く縁と未来への継承を象徴しています。受け継いだ力や想いをこの文化祭で存分に発揮し、参加する方々に楽しい時間を分かち合えることを願っています。</p>
+          </div>
+
+          <div class="card card-hover rounded-2xl p-6 flex flex-col items-center text-center transition-transform duration-300">
+            <img src="https://placehold.co/128x128/D4E6F1/5D9CEC?text=書道部" class="w-32 h-32 rounded-full mb-5 border-4 border-gray-200 object-cover" alt="書道部">
+            <h3 class="text-2xl font-bold">書道部</h3>
+            <p class="mt-3 text-base">「由縁」という言葉の意味を自分たちなりに解釈し、人との繋がりの温かさを伝えるために緩やかな曲線や文字の繋がりを意識して書き上げました。
+              限られた制作時間の中で繋がりとは何か、どう表現すれば見てくれる人に想いが伝わるかを考え抜いた作品です！
+              筆を踊らせ表現した糸編の力強さにもご注目ください！</p>
+          </div>
+
+          <div class="card card-hover rounded-2xl p-6 flex flex-col items-center text-center transition-transform duration-300">
+            <img src="https://placehold.co/128x128/D5F5E3/58D68D?text=写真部" class="w-32 h-32 rounded-full mb-5 border-4 border-gray-200 object-cover" alt="写真部">
+            <h3 class="text-2xl font-bold">写真部・フォトクラブ</h3>
+            <p class="font-semibold mb-2 text-base" style="color: #1EBAEE;">
+              モザイクアート
+            </p>
+            <p class="mt-3 text-base">津田沼祭に参加・出店してくださってる団体の皆さんから普段の活動の写真を集めて、運命の赤い糸に乗せることで、津田沼祭を通じた繋がり・由縁を示しています。</p>
+          </div>
+        </div>
+
+        <footer class="text-center mt-20 pt-8 border-t border-gray-300 text-gray-500 text-sm">
+          &copy; 2025 津田沼祭実行委員会. All rights reserved.
+        </footer>
+      </div>
+    </section>
+
+  </div> <script>
+    window.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        }, false);
+        
+    window.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) {
+            e.preventDefault();
+        }
+        if (e.key === 'F12') {
+            e.preventDefault();
+        }
+    });
+  </script>
+  </body>
+</html>
